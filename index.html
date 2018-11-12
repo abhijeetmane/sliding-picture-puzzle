@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="help-options">
+        <span onclick="showHelp('white')">Easy Level</span>
+        <span onclick="showHelp('transparent')">Expert Level</span>
+        <span onclick="autoSolvePuzzle()">AutoSolve</span>
+    </div>
+    <div class="grid-options">
+        <span onclick="changeGrid(2)">2*2</span>
+        <span onclick="changeGrid(3)">3*3</span>
+        <span onclick="changeGrid(4)">4*4</span>
+    </div>
+    <div id='container'>
+        <div class="track-puzzle">
+            <div class="timerBlock">
+                <div>Moves: <span id="moves"></span> </div>
+                <div>Time: <span id="timer"></span> </div>
+            </div>
+            <div class='original-puzzle'>
+                <span class='preview'>Preview:</span>
+                <span id="original-puzzle"></span>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
